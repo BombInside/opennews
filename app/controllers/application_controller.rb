@@ -6,17 +6,33 @@ class ApplicationController < ActionController::Base
   before_filter :configure_permitted_parameters, if: :devise_controller?
 
   protected
+<<<<<<< HEAD
     #->Prelang (user_login:devise)
+=======
+    def configure_devise_params
+    devise_parameter_sanitizer.for(:sign_up) do |u|
+      u.permit(:first_name, :last_name, :gender, :email, :password, :password_confirmation)
+    end
+  end
+
+>>>>>>> 937c179c562e8c3abdbbd42e490f7477ba09a4f6
 
 
 
   private
+<<<<<<< HEAD
+=======
+    #->Prelang (user_login:devise)
+>>>>>>> 937c179c562e8c3abdbbd42e490f7477ba09a4f6
   def configure_permitted_parameters
     devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:username, :email, :password, :password_confirmation, :remember_me) }
     devise_parameter_sanitizer.for(:sign_in) { |u| u.permit(:login, :username, :email, :password, :remember_me) }
     devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:username, :email, :password, :password_confirmation, :current_password) }
   end
+<<<<<<< HEAD
 
+=======
+>>>>>>> 937c179c562e8c3abdbbd42e490f7477ba09a4f6
   
   #-> Prelang (user_login:devise)
   def require_user_signed_in

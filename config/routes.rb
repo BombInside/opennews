@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   get 'core/index'
 
+=======
+>>>>>>> 937c179c562e8c3abdbbd42e490f7477ba09a4f6
   mount Ckeditor::Engine => '/ckeditor'
   resources :posts do
   #->Prelang (voting/acts_as_votable)
@@ -19,7 +22,11 @@ end
 
   ActiveAdmin.routes(self)
  
+<<<<<<< HEAD
   root 'core#index'
+=======
+  root 'posts#index'
+>>>>>>> 937c179c562e8c3abdbbd42e490f7477ba09a4f6
 
  
   

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="content-container no-padding">
                 <div class="container-full">
                     <div class="row">
@@ -66,6 +67,8 @@
                 </div>
             </div>
 
+=======
+>>>>>>> 937c179c562e8c3abdbbd42e490f7477ba09a4f6
 <h1>Listing posts</h1>
 
 <table>
@@ -84,7 +87,11 @@
       <tr>
         <td><%= post.title %></td>
         <td><%= post.description %></td>
+<<<<<<< HEAD
         <td><%= truncate_html(post.content.html_safe, length: 80) %></td>
+=======
+        <td><%= truncate(post.content.html_safe, length: 150) %></td>
+>>>>>>> 937c179c562e8c3abdbbd42e490f7477ba09a4f6
         <td><%= post.user %></td>
         <td><%= link_to 'Show', post %></td>
       </tr>
@@ -94,4 +101,8 @@
 
 <br>
 
+<<<<<<< HEAD
 
+=======
+<%= link_to 'New Post', new_post_path %>
+>>>>>>> 937c179c562e8c3abdbbd42e490f7477ba09a4f6

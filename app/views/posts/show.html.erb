@@ -12,7 +12,11 @@
 
 <p>
   <strong>Content:</strong>
+<<<<<<< HEAD
   <%= @post.content.html_safe %>
+=======
+  <%= @post.content %>
+>>>>>>> 937c179c562e8c3abdbbd42e490f7477ba09a4f6
 </p>
 
 <p>
@@ -20,4 +24,8 @@
   <%= @post.user %>
 </p>
 
+<<<<<<< HEAD
+=======
+<%= link_to 'Edit', edit_post_path(@post) %> |
+>>>>>>> 937c179c562e8c3abdbbd42e490f7477ba09a4f6
 <%= link_to 'Back', posts_path %>
