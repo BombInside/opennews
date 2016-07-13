@@ -29,7 +29,7 @@ class ApplicationController < ActionController::Base
       elsif defined?(root_path)
         fallback_redirect = root_path
       else
-        fallback_redirect = "/"
+       fallback_redirect = "/"
       end
 
       redirect_to fallback_redirect, flash: {error: "You must be signed in to view this page."}
