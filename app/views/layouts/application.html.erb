@@ -50,12 +50,13 @@
                                             <span class="icon-bar bar-middle"></span>
                                             <span class="icon-bar bar-bottom"></span>
                                         </button>
-                                        <a class="cart-icon-mobile" href="#"><i class="elegant_icon_bag"></i> <span>0</span></a>
-                                        <a class="navbar-brand" title="Yolia" href="index.html">
-                                        	<%= image_tag("logo.png", class: "logo", alt: "Відкрите серце Кіровоград") %>
-                                            <%= image_tag("logo.png", class: "logo", alt: "Відкрите серце Кіровоград") %>
-                                            <%= image_tag("logo.png", class: "logo", alt: "Відкрите серце Кіровоград") %>
-                                        </a>
+                                       
+                                        <%= link_to root_path, class: "navbar-brand", title: "Відкрите серце Кіровоград" do %>
+                                        	<%= image_tag("logo_white.png", class: "logo", alt: "Відкрите серце Кіровоград") %>
+                                            <%= image_tag("logo_fix.png", class: "logo-fixedFF", alt: "Відкрите серце Кіровоград") %>
+                                            <%= image_tag("logo_mobile.png", class: "logo-mobile", alt: "Відкрите серце Кіровоград") %>
+                                        <% end %>
+                                        
                                     </div>
                                     <nav class="collapse navbar-collapse primary-navbar-collapse">
                                         <ul class="nav navbar-nav primary-nav">
@@ -109,11 +110,11 @@
                                                 </ul>
                                             </li>
                                             <li class="menu-item-navbar-brand">
-                                                <a class="navbar-brand" href="index.html">
-                                                    <img class="logo" alt="Yolia" src="images/logo-white.png">
-                                                    <img class="logo-fixed" alt="Yolia" src="images/logo-fixed.png">
-                                                    <img class="logo-mobile" alt="Yolia" src="images/logo-mobile.png">
-                                                </a>
+                                        <%= link_to root_path, class: "navbar-brand", title: "Відкрите серце Кіровоград" do %>
+                                        	<%= image_tag("logo_white.png", class: "logo", alt: "Відкрите серце Кіровоград") %>
+                                            <%= image_tag("logo_fix.png", class: "logo-fixed", alt: "Відкрите серце Кіровоград") %>
+
+                                        <% end %>
                                             </li>
                                             <li class="menu-item-has-children dropdown">
                                                 <a title="Portfolio" href="#" class="dropdown-hover">
